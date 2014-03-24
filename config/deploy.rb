@@ -37,7 +37,7 @@ role :db,  domain, :primary => true # This is where Rails migrations will run
    end
 
    task :seed do
-   		deploy.migrations
-   		run "cd #{current_path}; rake db:seed RAILS_ENV=production"
+   	 deploy.migrations
+   	 run "cd #{current_path}; rake db:seed RAILS_ENV=production"
    end
  end
